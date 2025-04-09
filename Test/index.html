@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ადმინისტრატორის აუტორიზაცია ადმინისტრატორებისთვის">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Speak Up | მხოლოდ ადმინისტრატორებისთვის</title>
+
+    <link rel="stylesheet" href="./general.css">
+</head>
+<body>
+    <main>
+        <section class="auth">
+            <img src="./images/logo.png" alt="speakup logo" class="logo">
+            <form>
+                <span class="form-title">ადმინ პაროლი</span>
+                <hr class="divisor">
+                <div id="inputs">
+                    <input type="text" id="name-input" placeholder="შეიყვანეთ ადმინისტრატორის სახელი">
+                    <div class="password-input-container">
+                        <input type="password" id="password-input" placeholder="შეიყვანეთ პაროლი">
+                        <button id="show-password">👁️</button>
+                    </div>
+                </div>
+                <button id="submit">შესვლა</button>
+            </form>
+            <div id="modals">
+
+            </div>
+        </section>
+        <section class="admin">
+            <div class="search">
+                <input type="text" id="target-name" spellcheck="false" placeholder="ვისი პოსტები გინდა წაშალო:">
+                <button id="search">ვნახოთ პოსტები</button>
+            </div>
+            <div class="posts">
+                
+            </div>
+        </section>
+    </main>
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); /* font to use */
+
+*
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+main
+{
+    width: 100vw;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.auth
+{
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.logo
+{
+    width: 200px;
+}
+.form-title
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+form
+{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.divisor
+{
+    width: 110px;
+    height: 3px;
+
+    margin-top: 30px;
+
+    background: #5bff52;
+}
+#inputs
+{
+    margin-top: 15px;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+input
+{
+    width: 400px;
+    height: 48px;
+
+    padding: 10px;
+    color: #000;
+
+    border-radius: 8px;
+    border: 0.8px #e0e0e0 solid;
+}
+.password-input-container
+{
+    width: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#show-password
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 370px;
+    background: #00000000;
+    cursor: pointer;
+}
+input:hover
+{
+    border-color: #5bff52;
+}
+#submit
+{
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    background: #5bff52;
+    color: #fff;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    width: 400px;
+    height: 48px;
+
+    cursor: pointer;
+}
+#submit:hover
+{
+    background: #3367d6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#modals
+{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    width: auto;
+    height: auto;
+}
+.modal
+{
+    width: 400px;
+    height: 54px;
+
+    padding: 5px;
+
+    background: #f44336;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+}
+.modal svg
+{
+    width: 40px;
+    height: 40px;
+}
+.modal p
+{
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    color: #fff;
+}
+.modal button
+{
+    width: 20px;
+    height: 20px;
+
+    background: #11111100;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+.admin
+{
+    width: 100vw;
+    height: auto;
+
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.search
+{
+    width: 100vw;
+    height: auto;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+#search
+{
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    background: #5bff52;
+    color: #fff;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    width: 400px;
+    height: 48px;
+
+    cursor: pointer;
+}
+#search:hover
+{
+    background: #3367d6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.posts
+{
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.post
+{
+    width: 400px;
+    height: auto;
+
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.post-head
+{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: solid #33333333 0.8px;
+}
+.profile-image
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #333;   
+}
+.post-developer, .post-date, .post-text
+{
+    color: #000;
+    font-weight: bold;
+}
+.post-text
+{
+    width: 100%;
+    text-align: left;
+}
+.post-image
+{
+    width: 100%;
+}
+.submit-delete
+{
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    background: #e44e4e;
+    color: #fff;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    width: 100%;
+    height: 48px;
+
+    cursor: pointer;
+}
+.submit-delete:hover
+{
+    background: #f44336;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.id
+{
+    position: absolute;
+    display: none;
+}
