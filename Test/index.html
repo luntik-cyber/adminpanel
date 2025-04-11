@@ -11,29 +11,50 @@
     <link rel="stylesheet" href="./general.css">
 </head>
 <body>
+    <div class="loading-animation" id="page-load-animation">
+        <img src="./images/logo.png" class="loading-logo">
+        <p class="loading-text">ᲛᲘᲛᲓᲘᲜᲐᲠᲔᲝᲑᲡ ᲩᲐᲢᲕᲘᲠᲗᲕᲐ</p>
+        
+    </div>
     <main>
         <section class="auth">
             <img src="./images/logo.png" alt="speakup logo" class="logo">
             <form>
-                <span class="form-title">ადმინ პაროლი</span>
+                <span class="form-title">ᲐᲓᲛᲘᲜ პᲐᲠᲝᲚᲘ</span>
+                
                 <hr class="divisor">
+                
                 <div id="inputs">
                     <input type="text" id="name-input" placeholder="შეიყვანეთ ადმინისტრატორის სახელი">
                     <div class="password-input-container">
                         <input type="password" id="password-input" placeholder="შეიყვანეთ პაროლი">
-                        <button id="show-password">👁️</button>
                     </div>
                 </div>
-                <button id="submit">შესვლა</button>
+                <button id="submit">ᲨᲔᲡᲕᲚᲐ</button>
             </form>
             <div id="modals">
-
+                <div class="rules-modal">
+                    <h2>წესები</h2>
+                    <ol>
+                        <li>არ შეიძლება ადმინისტრატორის საიტის გავრცელება</li>
+                        <li>არ შეიძლება ადმინ პაროლის გავრცელება</li>
+                    </ol>
+                    <button class="close-rules">დახურვა</button>
+                </div>
             </div>
         </section>
         <section class="admin">
             <div class="search">
-                <input type="text" id="target-name" spellcheck="false" placeholder="ვისი პოსტები გინდა წაშალო:">
-                <button id="search">ვნახოთ პოსტები</button>
+                <input type="text" id="target-name" spellcheck="false" placeholder="შეიყვანე ანგარიშის სახელი :">
+                <button id="search">ᲐᲜᲒᲐᲠᲘᲨᲘᲡ პᲝᲡᲢᲔᲑᲘ</button>
+                <button id="help-button">ᲠᲝᲒᲝᲠ ᲛᲣᲨᲐᲝᲑᲡ ?</button>
+                <button id="forgot-day">ᲓᲐᲕᲘᲬᲔ ᲡᲐᲛᲣᲨᲐᲝ ᲓᲦᲔ</button>
+                <button id="rules-button">ᲐᲓᲛᲘᲜᲘᲡᲢᲠᲐᲢᲝᲠᲘᲡ ᲬᲔᲡᲔᲑᲘ</button>
+            </div>
+            <div class="blocker">
+                <input type="text" spellcheck="false" placeholder="დასაბლოკელი ადამიანი" id="user-to-block">
+                <button id="block">დაბლოკვა</button>
+                <button id="unblock">განბლოკვა</button>
             </div>
             <div class="posts">
                 
